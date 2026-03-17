@@ -44,6 +44,6 @@ Este livro é um esboço inicial de uma light novel focada em narrativa intensa 
 ---
 
 ## 📬 Contato
-*(Adicione aqui suas redes ou formas de contato, se desejar)*
+*professorantony.r@gmail.com)*
 
 ---
