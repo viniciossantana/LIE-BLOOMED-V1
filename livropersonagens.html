@@ -27,184 +27,155 @@ color:#111;
 /* BANNER */
 
 .banner{
-
 width:100%;
 height:300px;
-
-background:linear-gradient(
-90deg,
-#ff2a6d,
-#8b2c52
-);
-
+background:linear-gradient(90deg,#ff2a6d,#8b2c52);
 display:flex;
 align-items:center;
 justify-content:center;
 text-align:center;
 color:white;
-
 }
 
 .banner h1{
-
 font-size:48px;
 letter-spacing:6px;
 font-weight:800;
-
 }
 
 /* CONTAINER */
 
 .container{
-
 max-width:1300px;
 margin:auto;
 padding:70px 20px;
-
 }
 
 /* TITULO */
 
 .section-title{
-
 text-align:center;
 font-size:36px;
 margin-bottom:60px;
 color:#8b2c52;
 font-weight:800;
-
 }
 
 /* GRID */
 
 .characters{
-
 display:grid;
-
 grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-
 gap:30px;
-
 }
 
 /* CARD */
 
 .card{
-
 background:white;
-
 border-radius:16px;
-
 overflow:hidden;
-
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
-
 transition:0.4s;
-
 }
 
 .card:hover{
-
 transform:translateY(-8px);
-
 box-shadow:0 20px 40px rgba(0,0,0,0.2);
-
 }
 
-/* IMAGEM AJUSTADA */
+/* IMAGEM */
 
 .card img{
-
 width:100%;
 height:260px;
 object-fit:contain;
 background:#ffffff;
 display:block;
 padding:10px;
-
 }
 
 /* INFO */
 
 .info{
-
 padding:20px;
-
 }
 
 .name{
-
 font-size:20px;
 font-weight:700;
 color:#ff2a6d;
 margin-bottom:5px;
-
 }
 
 .role{
-
 font-size:13px;
 color:#666;
 margin-bottom:10px;
-
 }
 
 .description{
-
 font-size:14px;
 line-height:1.6;
 color:#333;
+}
 
+/* BOTÃO BIOGRAFIA */
+
+.bio-btn{
+margin-top:12px;
+padding:10px 16px;
+border:none;
+border-radius:8px;
+background:#ff2a6d;
+color:white;
+cursor:pointer;
+font-weight:600;
+transition:0.3s;
+}
+
+.bio-btn:hover{
+background:#8b2c52;
 }
 
 /* FOOTER */
 
 footer{
-
 margin-top:80px;
 padding:40px;
 text-align:center;
 background:#0f0f12;
 color:#aaa;
-
 }
 
-header{
+/* HEADER */
 
+header{
 width:100%;
 background:linear-gradient(90deg,#ff2a6d,#8b2c52);
 padding:18px 40px;
-
 display:flex;
 align-items:center;
 justify-content:space-between;
-
 color:white;
-
 }
 
 .logo{
-
 font-size:22px;
 font-weight:800;
 letter-spacing:2px;
-
 }
 
 nav a{
-
 color:white;
 text-decoration:none;
 margin-left:25px;
 font-weight:500;
 transition:0.3s;
-
 }
 
 nav a:hover{
-
 opacity:0.7;
-
 }
 
 </style>
@@ -213,7 +184,7 @@ opacity:0.7;
 
 <body>
 
-    <header>
+<header>
 
 <div class="logo">
 LIE:BLOOMED
@@ -224,7 +195,7 @@ LIE:BLOOMED
 <a href="index.html">Início</a>
 <a href="livropersonagens.html">Personagens</a>
 <a href="vendalivro.html">Livros</a>
-<a href="https://www.amazon.com.br/LIE-BLOOMED-Light-Novel-ebook/dp/B0G5JDS8XX/ref=sr_1_1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=17WE9XLFC6AHY&dib=eyJ2IjoiMSJ9.fMjizaYyxg_QSO0BHQTo1Ptaadfw3ZQSslyaVuY4gQg.21H0q7PnIwnPQ3KRXLpaW2yv4DkwVNhcI3gXDpy1WJc&dib_tag=se&keywords=lie%3A+bloomed&qid=1773341009&sprefix=lie+bloomed%2Caps%2C225&sr=8-1" target="_blank">Comprar</a>
+<a href="https://www.amazon.com.br/LIE-BLOOMED-Light-Novel-ebook/dp/B0G5JDS8XX/" target="_blank">Comprar</a>
 
 </nav>
 
@@ -252,7 +223,10 @@ LIE:BLOOMED
 <div class="role">Protagonista</div>
 <div class="description">
 Biografia em andamento...
-    <buton>Biografia do personagem</button>
+<br>
+<button class="bio-btn" onclick="window.location.href='simon.html'">
+Biografia do personagem
+</button>
 </div>
 </div>
 </div>
@@ -267,6 +241,10 @@ Biografia em andamento...
 <div class="role">Vilão Final</div>
 <div class="description">
 Biografia em andamento...
+<br>
+<button class="bio-btn" onclick="window.location.href='dabbo.html'">
+Biografia do personagem
+</button>
 </div>
 </div>
 </div>
@@ -281,6 +259,10 @@ Biografia em andamento...
 <div class="role">Desconhecido</div>
 <div class="description">
 Desconhecido
+<br>
+<button class="bio-btn" onclick="window.location.href='ricardo.html'">
+Biografia do personagem
+</button>
 </div>
 </div>
 </div>
@@ -295,6 +277,10 @@ Desconhecido
 <div class="role">Combatente</div>
 <div class="description">
 Biografia em andamento...
+<br>
+<button class="bio-btn" onclick="window.location.href='kaluana.html'">
+Biografia do personagem
+</button>
 </div>
 </div>
 </div>
@@ -309,6 +295,10 @@ Biografia em andamento...
 <div class="role">Desconhecido</div>
 <div class="description">
 Biografia em andamento...
+<br>
+<button class="bio-btn" onclick="window.location.href='catarina.html'">
+Biografia do personagem
+</button>
 </div>
 </div>
 </div>
@@ -323,6 +313,10 @@ Biografia em andamento...
 <div class="role">Desconhecido</div>
 <div class="description">
 Biografia em andamento...
+<br>
+<button class="bio-btn" onclick="window.location.href='juliano.html'">
+Biografia do personagem
+</button>
 </div>
 </div>
 </div>
@@ -337,6 +331,10 @@ Biografia em andamento...
 <div class="role">Disvirtuado</div>
 <div class="description">
 Biografia em andamento
+<br>
+<button class="bio-btn" onclick="window.location.href='estalador.html'">
+Biografia do personagem
+</button>
 </div>
 </div>
 </div>
